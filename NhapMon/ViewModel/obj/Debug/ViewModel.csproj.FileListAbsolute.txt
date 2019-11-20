@@ -1,0 +1,10 @@
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\ViewModel.dll
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\ViewModel.pdb
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.csprojAssemblyReference.cache
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.dll
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.pdb
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\Model.dll
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\Model.pdb
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.csproj.CopyComplete
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\BaseViewModel.dll
+E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\BaseViewModel.pdb

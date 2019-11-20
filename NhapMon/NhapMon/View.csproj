@@ -173,5 +173,11 @@
   <ItemGroup>
     <Resource Include="Assets\Logo1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{9d2b5a15-227f-43e3-8431-96bc3ac6bff6}</Project>
+      <Name>ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

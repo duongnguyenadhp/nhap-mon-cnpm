@@ -1,0 +1,5 @@
+E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\Model.dll
+E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\Model.pdb
+E:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.csprojAssemblyReference.cache
+E:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.dll
+E:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.pdb
