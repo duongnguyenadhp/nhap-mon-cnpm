@@ -9,6 +9,7 @@ namespace ViewModel
 {
     public class MainWindowViewModel:BaseViewModel
     {
+        public string Test;
         public MainWindowViewModel()
         {
            

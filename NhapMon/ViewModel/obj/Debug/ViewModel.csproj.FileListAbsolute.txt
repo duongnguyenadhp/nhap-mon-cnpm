@@ -8,3 +8,12 @@ E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\Model.pdb
 E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.csproj.CopyComplete
 E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\BaseViewModel.dll
 E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\BaseViewModel.pdb
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\ViewModel.dll
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\ViewModel.pdb
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\Model.dll
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\Model.pdb
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\BaseViewModel.pdb
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.csprojAssemblyReference.cache
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.csproj.CopyComplete
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.dll
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\obj\Debug\ViewModel.pdb

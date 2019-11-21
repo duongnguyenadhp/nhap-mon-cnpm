@@ -49,48 +49,7 @@
                         <materialDesign:PackIcon  Kind="HamburgerMenu" Width="30" Height="30"/>
                     </Button>
                 </Grid>
-                <!--<ListView Margin="0 10 0 0">
-                    <ListView.Resources>
-                        <Style TargetType="StackPanel">
-                            <Setter Property="Margin" Value="0 3 0 3"></Setter>
-                        </Style>
-                        <Style TargetType="materialDesign:PackIcon">
-                            <Setter Property="Height" Value="25"></Setter>
-                            <Setter Property="Width" Value="25"></Setter>
-                            <Setter Property="Foreground" Value="GhostWhite"></Setter>
-                        </Style>
-                        <Style TargetType="TextBlock">
-                            <Setter Property="VerticalAlignment" Value="Center"></Setter>
-                            <Setter Property="Margin" Value="5 0 0 0"></Setter>
-                            <Setter Property="FontWeight" Value="DemiBold"></Setter>
-                            <Setter Property="Foreground" Value="White"></Setter>
-                        </Style>
-                    </ListView.Resources>
-                    <ListViewItem>
-                        <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="Account"></materialDesign:PackIcon>
-                            <TextBlock Text="Quản lý tài khoản"></TextBlock>
-                        </StackPanel>
-                    </ListViewItem>
-                    <ListViewItem>
-                        <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="ViewList"></materialDesign:PackIcon>
-                            <TextBlock Text="Quản lý danh mục"></TextBlock>
-                        </StackPanel>
-                    </ListViewItem>
-                    <ListViewItem>
-                        <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="PersonGroup"></materialDesign:PackIcon>
-                            <TextBlock Text="Quản lý học sinh"></TextBlock>
-                        </StackPanel>
-                    </ListViewItem>
-                    <ListViewItem>
-                        <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="FileDocumentBoxSearch"></materialDesign:PackIcon>
-                            <TextBlock Text="Thống kê"></TextBlock>
-                        </StackPanel>
-                    </ListViewItem>
-                </ListView>-->
+                
 
                 <TreeView x:Name="tvTest" Foreground="White" FontWeight="DemiBold" Margin="0 25 0 0" 
                           Height="516" 
@@ -107,19 +66,31 @@
 
                     </TreeViewItem>
                     <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-                    <TreeViewItem Header="Quản Lý Danh Mục" IsExpanded="True">
-                        <TreeViewItem Header="Danh Mục Học Sinh">
+                    <TreeViewItem Header="Quản Lý Danh Mục">
+                        <TreeViewItem Header="Danh Mục Điểm">
                         </TreeViewItem>
                         
+                        <TreeViewItem Header="Danh Mục Giáo Viên">
+                        </TreeViewItem>
+
+                        <TreeViewItem Header="Danh Mục Môn Học">
+                        </TreeViewItem>
+                        
+                        <TreeViewItem Header="Danh Mục Lớp">
+                        </TreeViewItem>
+
                         <TreeViewItem Header="Danh Mục Phụ">
                         </TreeViewItem>
-                       
-                       
+
                     </TreeViewItem>
                     <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-                    <TreeViewItem Header="Quản Lý Học Sinh" IsExpanded="True">
+                    <TreeViewItem Header="Quản Lý Học Sinh">
                         
                         <TreeViewItem Header="Thông Tin Học Sinh">
+
+                            <TreeViewItem Header="Đã Tốt Nghiệp"></TreeViewItem>
+                            <TreeViewItem Header="Chưa Tốt Nghiệp"></TreeViewItem>
+                        
                         </TreeViewItem>
 
                         <TreeViewItem Header="Điểm Thi">
@@ -127,20 +98,9 @@
 
                     </TreeViewItem>
                     <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-                    <TreeViewItem Header="Quản Lý Giáo Viên" IsExpanded="True">
-                        <TreeViewItem Header="Thông Tin Giáo Viên">
-                            
-                        </TreeViewItem>
-
-                        <TreeViewItem Header="Phân Công Giảng Dạy">
-                            
-                        </TreeViewItem>
-                    </TreeViewItem>
-                    <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-                    <TreeViewItem Header="Quản Lý Lớp" />
-                    <TreeViewItem Header="Quản Lý Môn Học" />
-
-
+                    <TreeViewItem Header="Quản Lý Học Tập"/>
+                    <TreeViewItem Header="Quản Lý Rèn Luyện" />
+                    
                 </TreeView>
 
 

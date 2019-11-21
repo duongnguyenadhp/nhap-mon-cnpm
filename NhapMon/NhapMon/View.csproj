@@ -85,6 +85,9 @@
     <Compile Include="UCHSDaTotNghiep.xaml.cs">
       <DependentUpon>UCHSDaTotNghiep.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UCQLDM.xaml.cs">
+      <DependentUpon>UCQLDM.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UCQLHocSinh.xaml.cs">
       <DependentUpon>UCQLHocSinh.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UCHSDaTotNghiep.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCQLDM.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
