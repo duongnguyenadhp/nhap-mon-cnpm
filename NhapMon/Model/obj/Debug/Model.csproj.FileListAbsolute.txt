@@ -8,8 +8,3 @@ D:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\Model.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.csprojAssemblyReference.cache
 D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.dll
 D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.pdb
-D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\UCQLDM.g.cs
-D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model_MarkupCompile.cache
-D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model_MarkupCompile.lref
-D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\UCQLDM.baml
-D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.g.resources

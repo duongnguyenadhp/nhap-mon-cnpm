@@ -84,3 +84,5 @@ D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\View.csproj.GenerateResource.cach
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\View.csproj.CopyComplete
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\NhapMon.exe
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\NhapMon.pdb
+D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.g.cs
+D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.baml
