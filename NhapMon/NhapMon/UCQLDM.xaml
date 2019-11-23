@@ -8,232 +8,235 @@
              mc:Ignorable="d" 
              d:DesignHeight="621" d:DesignWidth="754">
     <Grid Background="White">
-        <Border>
-            <GroupBox Header="Quản Lý" Height="130" 
-                            VerticalAlignment="Top"
-                            Style="{DynamicResource MaterialDesignGroupBox}"
-                            Margin="16,16,16,0"
-                            UseLayoutRounding="True"
-                            SnapsToDevicePixels="True">
 
-                <Grid >
-                    <Grid.Resources>
-                        <Style TargetType="ComboBox">
-                            <Setter Property="Margin" Value="0 0 5 0"></Setter>
-                        </Style>
+        <WrapPanel>
+            <Grid Width="215" Margin="5 5 5 5">
+                <Border Background="Azure" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                    <StackPanel Orientation="Vertical">
 
-                        <Style TargetType="TextBlock">
-                            <Setter Property="Margin" Value="15 0 0 0"></Setter>
-                        </Style>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="Điểm Ưu Tiên:"></TextBlock>
+                            <ComboBox Width="70" Height="22" Margin="50 0 0 0"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
 
+                                <ComboBoxItem Content="Thêm"/>
+                            </ComboBox>
+                        </StackPanel>
 
-                    </Grid.Resources>
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Điểm Ưu Tiên:"></TextBlock>
-                    <ComboBox Grid.Row="0" Grid.Column="0"  Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="Mã Điểm Ưu Tiên:"></TextBlock>
+                            <ComboBox Margin="30 0 0 0" Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
 
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
+                                <ComboBoxItem>
+                                    Thêm
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
 
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Mã Điểm Ưu Tiên:" ></TextBlock>
-                    <ComboBox Grid.Row="0" Grid.Column="1"  Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="11*"/>
+                                    <ColumnDefinition Width="9*"/>
+                                </Grid.ColumnDefinitions>
+                                <ListView Height="100" Width="140" Grid.ColumnSpan="2">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Header="Mã" Width="50"></GridViewColumn>
+                                            <GridViewColumn Header="Tên Điểm" Width="95"></GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </Grid>
 
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
+                            <Grid>
+                                <StackPanel Orientation="Vertical">
+                                    <Button Margin="5,5,5,0" Content="Thêm" Height="25" />
+                                    <Button Margin="5 5 5 0" Content="Sửa"  Height="25"  />
+                                    <Button Margin="5 5 5 0" Content="Xóa"  Height="25"  />
 
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="0" Grid.Column="2" Text="Dân Tộc:"  ></TextBlock>
-                    <ComboBox Grid.Row="0" Grid.Column="2"  Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
 
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
+                    </StackPanel>
 
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="0" Grid.Column="3" Text="Mã Dân Tộc:"  ></TextBlock>
-                    <ComboBox Grid.Row="0" Grid.Column="3"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="1" Grid.Column="0" Text="TPGĐ"></TextBlock>
-                    <ComboBox Grid.Row="1" Grid.Column="0"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="1" Grid.Column="1" Text="Mã TPGĐ"></TextBlock>
-                    <ComboBox Grid.Row="1" Grid.Column="1"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="1" Grid.Column="2" Text="Năm Học"></TextBlock>
-                    <ComboBox Grid.Row="1" Grid.Column="2"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="1" Grid.Column="3" Text="Mã Năm Học"></TextBlock>
-                    <ComboBox Grid.Row="1" Grid.Column="3"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Học Kỳ"></TextBlock>
-                    <ComboBox Grid.Row="2" Grid.Column="0"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="2" Grid.Column="1" Text="Mã Học Kỳ"></TextBlock>
-                    <ComboBox Grid.Row="2" Grid.Column="1"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="2" Grid.Column="2" Text="Loại Điểm"></TextBlock>
-                    <ComboBox Grid.Row="2" Grid.Column="2"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <TextBlock Grid.Row="2" Grid.Column="3" Text="Mã Loại Điểm"></TextBlock>
-                    <ComboBox Grid.Row="2" Grid.Column="3"  Width="70" Height="22" materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                        <ComboBoxItem>
-                            Thêm
-                        </ComboBoxItem>
-                    </ComboBox>
-
-                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                    <!--
-                    <Grid Grid.Row="2" Grid.Column="3">
-                        <Button Content="Sửa"  Margin="5 0 0 0" Width="60" Height="25" HorizontalAlignment="Left" ></Button>
-                        <Button Content="Xóa"  Margin="15 0 0 0" Width="60" Height="25" HorizontalAlignment="Right" ></Button>
-                    </Grid>-->
-
-                </Grid>
-
-
-
-            </GroupBox>
-
-        </Border>
-
-        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-        <Border>
-            <Grid >
-                <Button Content="Sửa"  Margin="16,150,655,446" Height="25"  />
-                <Button Content="Xóa"  Margin="114,150,557,446" Height="25"  />
+                </Border>
             </Grid>
-        </Border>
+            <!--TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-->
+            <Grid Width="215" Margin="5 5 5 5">
+                <Border Background="Azure" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                    <StackPanel Orientation="Vertical">
 
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="Dân Tộc:"></TextBlock>
+                            <ComboBox Width="70" Height="22" Margin="50 0 0 0"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
 
-        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+                                <ComboBoxItem Content="Thêm"/>
+                            </ComboBox>
+                        </StackPanel>
 
-        <Border>
-            <GroupBox Header="Quản Lý Danh Mục Môn Học " Height="130" 
-                            VerticalAlignment="Top"
-                            Style="{DynamicResource MaterialDesignGroupBox}"
-                            Margin="16,200,16,0"
-                            UseLayoutRounding="True"
-                            SnapsToDevicePixels="True">
-            </GroupBox>
-        </Border>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="Mã Dân Tộc:"></TextBlock>
+                            <ComboBox Margin="30 0 0 0" Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
 
+                                <ComboBoxItem>
+                                    Thêm
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
 
-        <WrapPanel Margin="16,400,16,0">
-            <Grid Width="205">
-                <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="11*"/>
+                                    <ColumnDefinition Width="9*"/>
+                                </Grid.ColumnDefinitions>
+                                <ListView Height="100" Width="140" Grid.ColumnSpan="2">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Header="Mã" Width="50"></GridViewColumn>
+                                            <GridViewColumn Header="Tên DT" Width="95"></GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </Grid>
 
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="5 5 0 0" Text="Điểm Ưu Tiên:"></TextBlock>
-                        <ComboBox Width="70" Height="22" Margin="50 0 0 0"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+                            <Grid>
+                                <StackPanel Orientation="Vertical">
+                                    <Button Margin="5 5 5 0" Content="Thêm"  Height="25"/>
+                                    <Button Margin="5 5 5 0" Content="Sửa"  Height="25"  />
+                                    <Button Margin="5 5 5 0" Content="Xóa"  Height="25"  />
 
-                            <ComboBoxItem Content="Thêm"/>
-                        </ComboBox>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+
                     </StackPanel>
 
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="5 5 0 0" Text="Mã Điểm Ưu Tiên:"></TextBlock>
-                        <ComboBox Margin="30 0 0 0" Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-
-                            <ComboBoxItem>
-                                Thêm
-                            </ComboBoxItem>
-                        </ComboBox>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="11*"/>
-                                <ColumnDefinition Width="9*"/>
-                            </Grid.ColumnDefinitions>
-                            <ListView Height="100" Width="140" Grid.ColumnSpan="2">
-                                <ListView.View>
-                                    <GridView>
-                                        <GridViewColumn Header="Mã" Width="60"></GridViewColumn>
-                                        <GridViewColumn Header="Tên Điểm" Width="95"></GridViewColumn>
-                                    </GridView>
-                                </ListView.View>
-                            </ListView>
-                        </Grid>
-
-                        <Grid>
-                            <StackPanel Orientation="Vertical">
-                                <Button Margin="5 5 0 0" Content="Sửa"  Height="25"  />
-                                <Button Margin="5 5 0 0" Content="Xóa"  Height="25"  />
-                            </StackPanel>
-                        </Grid>
-                    </StackPanel>
-
-                </StackPanel>
-
-
+                </Border>
             </Grid>
+            <!--TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-->
+            <Grid Width="215" Margin="5 5 5 5">
+                <Border Background="Azure" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                    <StackPanel Orientation="Vertical">
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="TPGĐ:"></TextBlock>
+                            <ComboBox Width="70" Height="22" Margin="50 0 0 0"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+
+                                <ComboBoxItem Content="Thêm"/>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="Mã TPGĐ:"></TextBlock>
+                            <ComboBox Margin="30 0 0 0" Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+
+                                <ComboBoxItem>
+                                    Thêm
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="11*"/>
+                                    <ColumnDefinition Width="9*"/>
+                                </Grid.ColumnDefinitions>
+                                <ListView Height="100" Width="140" Grid.ColumnSpan="2">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Header="Mã" Width="50"></GridViewColumn>
+                                            <GridViewColumn Header="TPGĐ" Width="95"></GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </Grid>
+
+                            <Grid>
+                                <StackPanel Orientation="Vertical">
+                                    <Button Margin="5 5 5 0" Content="Thêm"  Height="25"/>
+                                    <Button Margin="5 5 5 0" Content="Sửa"  Height="25"  />
+                                    <Button Margin="5 5 5 0" Content="Xóa"  Height="25"  />
+
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Border>
+            </Grid>
+            <!--TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-->
+            <Grid Width="215" Margin="5 5 5 5">
+                <Border Background="Azure" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                    <StackPanel Orientation="Vertical">
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="Tên Giáo Viên:"></TextBlock>
+                            <ComboBox Width="70" Height="22" Margin="50 0 0 0"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+
+                                <ComboBoxItem Content="Thêm"/>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="Mã Giáo Viên:"></TextBlock>
+                            <ComboBox Margin="51 0 0 0" Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+
+                                <ComboBoxItem>
+                                    Thêm
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 5 0 0" Text="Giới Tính:"></TextBlock>
+                            <ComboBox Margin="75 0 0 0" Width="70" Height="22"  materialDesign:HintAssist.Hint="OS" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+
+                                <ComboBoxItem>Nam</ComboBoxItem>
+                                <ComboBoxItem>Nữ</ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5 25 0 0" Text="Địa chỉ:" Height="22"/>
+                            <TextBox Margin="25 0 0 0" Height="45" Width="131" materialDesign:HintAssist.Hint="Địa Chỉ" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="11*"/>
+                                    <ColumnDefinition Width="9*"/>
+                                </Grid.ColumnDefinitions>
+                                <ListView Height="100" Width="140" Grid.ColumnSpan="2">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Header="Mã" Width="50"></GridViewColumn>
+                                            <GridViewColumn Header="TPGĐ" Width="95"></GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </Grid>
+
+                            <Grid>
+                                <StackPanel Orientation="Vertical">
+                                    <Button Margin="5 5 5 0" Content="Thêm"  Height="25"/>
+                                    <Button Margin="5 5 5 0" Content="Sửa"  Height="25"  />
+                                    <Button Margin="5 5 5 0" Content="Xóa"  Height="25"  />
+
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Border>
+            </Grid>
+
+
 
         </WrapPanel>
 

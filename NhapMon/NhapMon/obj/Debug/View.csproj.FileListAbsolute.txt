@@ -52,7 +52,6 @@ D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\ViewModel.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\MaterialDesignColors.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\BaseViewModel.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\View.csprojAssemblyReference.cache
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCDangNhap.g.cs
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCDMDiemthi.g.cs
