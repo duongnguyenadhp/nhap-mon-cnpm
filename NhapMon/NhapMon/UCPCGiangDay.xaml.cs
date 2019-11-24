@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace NhapMon
 {
     /// <summary>
-    /// Interaction logic for UCDMHocSinh.xaml
+    /// Interaction logic for UCPCGiangDay.xaml
     /// </summary>
-    public partial class UCDMHocSinh : UserControl
+    public partial class UCPCGiangDay : UserControl
     {
-        public UCDMHocSinh()
+        public UCPCGiangDay()
         {
             InitializeComponent();
         }

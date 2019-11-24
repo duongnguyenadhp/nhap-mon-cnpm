@@ -13,3 +13,10 @@ E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.SqlServer.dll
 E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.xml
 E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.SqlServer.xml
 E:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\Model.dll.config
+D:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.dll
+D:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.xml
+D:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.csproj.CopyComplete

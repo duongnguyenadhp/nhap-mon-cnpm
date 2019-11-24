@@ -22,3 +22,10 @@ E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\EntityFramework.SqlServer.dll
 E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\Model.dll.config
 E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\EntityFramework.xml
 E:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\ViewModel.dll.config
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\EntityFramework.dll
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\Model.dll.config
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\BaseViewModel.pdb
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\EntityFramework.xml
+D:\Git\nhap-mon-cnpm\NhapMon\ViewModel\bin\Debug\EntityFramework.SqlServer.xml
