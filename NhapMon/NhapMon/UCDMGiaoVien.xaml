@@ -17,9 +17,9 @@
                             Margin="16"
                             UseLayoutRounding="True"
                             SnapsToDevicePixels="True">
-                        <StackPanel Orientation="Vertical">
-                            <StackPanel Orientation="Horizontal">
-                                <StackPanel.Resources>
+                        <Grid>
+                            <WrapPanel Orientation="Horizontal">
+                                <WrapPanel.Resources>
                                     <Style TargetType="TextBlock">
                                         <Setter Property="Margin" Value="5 10 5 10"></Setter>
                                         <Setter Property="VerticalAlignment" Value="Center"></Setter>
@@ -30,44 +30,32 @@
                                         <Setter Property="Height" Value="24"></Setter>
                                         <Setter Property="Margin" Value="0 0 5 0"></Setter>
                                     </Style>
-                                </StackPanel.Resources>
+                                </WrapPanel.Resources>
                                 <TextBlock Text="Mã Giáo Viên:"></TextBlock>
                                 <TextBox Width="50"></TextBox>
                                 <TextBlock Text="Tên Giáo Viên:"></TextBlock>
                                 <TextBox Width="140"></TextBox>
                                 <TextBlock Text="Địa chỉ:"></TextBlock>
                                 <TextBox Width="266"></TextBox>
-                                
-
-
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <StackPanel.Resources>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="Margin" Value="5 15 5 0"></Setter>
-                                        <Setter Property="VerticalAlignment" Value="Center"></Setter>
-                                    </Style>
-                                    <Style TargetType="TextBox">
-                                        <Setter Property="Width" Value="120"></Setter>
-                                        <Setter Property="VerticalAlignment" Value="Center"></Setter>
-                                        <Setter Property="Height" Value="24"></Setter>
-                                        <Setter Property="Margin" Value="0 15 5 0"></Setter>
-                                    </Style>
-                                </StackPanel.Resources>
-                                <TextBlock VerticalAlignment="Center" Text="Giới tính:"></TextBlock>
-                                <ComboBox Width="50" Height="30" Margin="0 15 0 0" VerticalContentAlignment="Center">
-                                    <ComboBoxItem IsSelected="True">Nam</ComboBoxItem>
-                                    <ComboBoxItem>Nữ</ComboBoxItem>
+                                <TextBlock VerticalAlignment="Center" Margin="0 0 0 0" Text="Giới tính:"></TextBlock>
+                                <ComboBox Height="30" Style="{x:Null}" Margin="5 0 0 0" VerticalContentAlignment="Center">
+                                    <ComboBoxItem IsSelected="True" Content="Nam"/>
+                                    <ComboBoxItem Content="Nữ"/>
                                 </ComboBox>
-                                <TextBlock Text="Ngày sinh:"></TextBlock>
-                                <DatePicker Width="120" Height="30" Margin="5 15 0 0"></DatePicker>
-                                <Button Content="Thêm" Margin="100 0 0 0" HorizontalAlignment="Right"></Button>
-                                <Button Content="Sửa" Margin="10"  HorizontalAlignment="Right"></Button>
+                                <TextBlock Text="Ngày sinh:" Margin="15 0 0 0"></TextBlock>
+                                <DatePicker Width="120" Height="30"
+                                            Margin="5 0 0 0"></DatePicker>
+                                <TextBlock Text="Điện thoại:" Margin="15 0 0 0"></TextBlock>
+                                <TextBox Width="120" Height="30" Margin="5 0 0 0"></TextBox>
+                                <Button Content="Thêm" Margin="50 0 0 0" HorizontalAlignment="Right"></Button>
                                 <Button Content="Xóa" Margin="10"  HorizontalAlignment="Right"></Button>
 
-                            </StackPanel>
-                            
-                        </StackPanel>
+
+
+
+                            </WrapPanel>
+                         
+                        </Grid>
 
 
 
@@ -85,9 +73,10 @@
                                 <GridView>
                                     <GridViewColumn Header="Mã" Width="50" DisplayMemberBinding="{Binding ID}" />
                                     <GridViewColumn Header="Tên Giáo viên" Width="170" DisplayMemberBinding="{Binding Name}" />
-                                    <GridViewColumn Header="Ngày sinh" Width="170" DisplayMemberBinding="{Binding DOB}" />
-                                    <GridViewColumn Header="Địa chỉ" Width="160" DisplayMemberBinding="{Binding Address}" />
+                                    <GridViewColumn Header="Ngày sinh" Width="100" DisplayMemberBinding="{Binding DOB}" />
+                                    <GridViewColumn Header="Địa chỉ" Width="150" DisplayMemberBinding="{Binding Address}" />
                                     <GridViewColumn Header="Giới tính" Width="90" DisplayMemberBinding="{Binding Sex}" />
+                                    <GridViewColumn Header="Điện thoại" Width="120" DisplayMemberBinding="{Binding Sex}" />
                                     
                                 </GridView>
                             </ListView.View>

@@ -67,6 +67,9 @@
     <Compile Include="UCDangNhap.xaml.cs">
       <DependentUpon>UCDangNhap.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UCDanhMucKhoi.xaml.cs">
+      <DependentUpon>UCDanhMucKhoi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UCDMDiemthi.xaml.cs">
       <DependentUpon>UCDMDiemthi.xaml</DependentUpon>
     </Compile>
@@ -88,13 +91,17 @@
     <Compile Include="UCPCGiangDay.xaml.cs">
       <DependentUpon>UCPCGiangDay.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCQLDM.xaml.cs">
-      <DependentUpon>UCQLDM.xaml</DependentUpon>
+    <Compile Include="UCQLDanhMucPhu.xaml.cs">
+      <DependentUpon>UCQLDanhMucPhu.xaml</DependentUpon>
     </Compile>
     <Compile Include="UCQLHocSinh.xaml.cs">
       <DependentUpon>UCQLHocSinh.xaml</DependentUpon>
     </Compile>
     <Page Include="UCDangNhap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCDanhMucKhoi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,7 +145,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCQLDM.xaml">
+    <Page Include="UCQLDanhMucPhu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

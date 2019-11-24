@@ -18,8 +18,10 @@ namespace ViewModel
                 new TabMenuItem(){Title="Đăng xuất",Icon="Logout"},
             },Icon="AccountCircle"},
             new TabMenu(){Title="Quản lý danh mục",Items=new ObservableCollection<TabMenuItem>(){
-                new TabMenuItem(){Title="Thông tin máy khách",Icon="InfoOutline"},
-                new TabMenuItem(){Title="Kiểm soát",Icon="RemoteDesktop"},
+                new TabMenuItem(){Title="Danh mục khối & lớp",Icon="InfoOutline"},
+                new TabMenuItem(){Title="Danh mục môn học",Icon="RemoteDesktop"},
+                new TabMenuItem(){Title="Danh mục giáo viên",Icon="RemoteDesktop"},
+                new TabMenuItem(){Title="Danh mục phụ",Icon="RemoteDesktop"},
             },Icon="DesktopClassic"},
             new TabMenu(){Title="Quản lý học sinh",Items=new ObservableCollection<TabMenuItem>(){
                 new TabMenuItem(){Title="Thông tin học sinh",Icon="PersonAddOutline"},
