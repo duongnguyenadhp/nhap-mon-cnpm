@@ -6,109 +6,101 @@
         xmlns:viewmodel="clr-namespace:ViewModel;assembly=ViewModel"
         xmlns:local="clr-namespace:NhapMon"
         mc:Ignorable="d"
-        ResizeMode="NoResize"
+        xmlns:ViewModel="clr-namespace:ViewModel;assembly=ViewModel"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        ResizeMode="NoResize" WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         DataContext="{Binding Source={x:Static viewmodel:ViewModelLocator.MainWindowViewModelStatic}}"
-        Title="MainWindow" Height="650" Width="1000">
-    <Window.Resources>
-        <Storyboard x:Key="MenuOpen">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
-                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
+        Title="MainWindow" Height="700" Width="1280">
 
-        <Storyboard x:Key="MenuClose">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
-                <EasingDoubleKeyFrame KeyTime="0" Value="200"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="70"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-    </Window.Resources>
-
-    <Window.Triggers>
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
-            <BeginStoryboard Storyboard="{StaticResource MenuOpen}"/>
-        </EventTrigger>
-
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
-            <BeginStoryboard Storyboard="{StaticResource MenuClose}"/>
-        </EventTrigger>
-    </Window.Triggers>
-    
     <Grid>
-        <Grid x:Name="GridMenu" HorizontalAlignment="Left" Width="40">
-            <StackPanel Background="#007ACC">
-                <Grid>
-                    <Image Height="80"  Source="Assets/Logo1.png"></Image>
-                    <Button x:Name="ButtonCloseMenu" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseMenu_Click">
-                        <materialDesign:PackIcon  Kind="ArrowLeft" Width="30" Height="30"/>
-                    </Button>
-                    <Button x:Name="ButtonOpenMenu" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Click="ButtonOpenMenu_Click">
-                        <materialDesign:PackIcon  Kind="HamburgerMenu" Width="30" Height="30"/>
-                    </Button>
-                </Grid>
-                
-
-                <TreeView x:Name="tvTest" Foreground="White" FontWeight="DemiBold" Margin="0 25 0 0" 
-                          Height="516" 
-                          FontSize="16" ScrollViewer.VerticalScrollBarVisibility="Auto" >
-                    <TreeViewItem Header="Quản lý tài khoản">
-                        
-                        <TreeViewItem
-                            Header="Đăng Nhập" />
-                        <TreeViewItem
-                            Header="Đăng Xuất">
-                        </TreeViewItem>
-                        <TreeViewItem
-                            Header="Phân Quyền"/>
-
-                    </TreeViewItem>
-                    <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-                    <TreeViewItem Header="Quản Lý Danh Mục">
-                        <TreeViewItem Header="Danh Mục Điểm">
-                        </TreeViewItem>
-                        
-                        <TreeViewItem Header="Danh Mục Giáo Viên">
-                        </TreeViewItem>
-
-                        <TreeViewItem Header="Danh Mục Môn Học">
-                        </TreeViewItem>
-                        
-                        <TreeViewItem Header="Danh Mục Lớp">
-                        </TreeViewItem>
-
-                        <TreeViewItem Header="Danh Mục Phụ">
-                        </TreeViewItem>
-
-                    </TreeViewItem>
-                    <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-                    <TreeViewItem Header="Quản Lý Học Sinh">
-                        
-                        <TreeViewItem Header="Thông Tin Học Sinh">
-
-                            <TreeViewItem Header="Đã Tốt Nghiệp"></TreeViewItem>
-                            <TreeViewItem Header="Chưa Tốt Nghiệp"></TreeViewItem>
-                        
-                        </TreeViewItem>
-
-                        <TreeViewItem Header="Điểm Thi">
-                        </TreeViewItem>
-
-                    </TreeViewItem>
-                    <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-                    <TreeViewItem Header="Quản Lý Học Tập"/>
-                    <TreeViewItem Header="Quản Lý Rèn Luyện" />
-                    
+        <Grid Name="grMenuTitle" Height="30" VerticalAlignment="Top" 
+              Background="#282D31" > 
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <StackPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="60"></Setter>
+                        <Setter Property="Background" Value="Transparent"></Setter>
+                        <Setter Property="BorderThickness" Value="0"></Setter>
+                        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                        <Setter Property="Foreground" Value="White"></Setter>
+                    </Style>
+                </StackPanel.Resources>
+                <Button x:Name="btnMinimize" PreviewMouseLeftButtonDown="btnMinimize_PreviewMouseLeftButtonDown">
+                    <materialDesign:PackIcon Kind="WindowMinimize"></materialDesign:PackIcon>
+                </Button>
+                <Button x:Name="btnMaximize" PreviewMouseLeftButtonDown="btnMaximize_PreviewMouseLeftButtonDown">
+                    <materialDesign:PackIcon Kind="WindowMaximize"></materialDesign:PackIcon>
+                </Button>
+                <Button Name="btnClose" PreviewMouseLeftButtonDown="btnClose_PreviewMouseLeftButtonDown">
+                    <materialDesign:PackIcon Kind="WindowClose"></materialDesign:PackIcon>
+                </Button>
+            </StackPanel>
+            <Menu HorizontalAlignment="Left" Height="30" Name="MenuTitle"
+                  BorderThickness="0" Background="#282D31">
+                <Menu.Resources>
+                    <Style TargetType="MenuItem" x:Key="MenuItemStyle">
+                        <Setter Property="Background" Value="#282D31"></Setter>
+                        <Setter Property="Foreground" Value="White"></Setter>
+                        <Setter Property="Height" Value="30"></Setter>
+                        <Setter Property="BorderThickness" Value="0"></Setter>
+                        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                        <Setter Property="FontSize" Value="12"></Setter>
+                    </Style>
+                    <Style TargetType="MenuItem" x:Key="MenuItemStyle2">
+                        <Setter Property="Background" Value="White"></Setter>
+                        <Setter Property="Foreground" Value="Black"></Setter>
+                        <Setter Property="Height" Value="20"></Setter>
+                        <Setter Property="BorderThickness" Value="0"></Setter>
+                        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                        <Setter Property="FontSize" Value="12"></Setter>
+                    </Style>
+                </Menu.Resources>
+                <MenuItem Header="Cài đặt" Style="{StaticResource MenuItemStyle}"></MenuItem>
+                <MenuItem Header="Trợ giúp" Style="{StaticResource MenuItemStyle}"></MenuItem>
+            </Menu>
+        </Grid>
+        <Grid x:Name="grMenu" HorizontalAlignment="Left" Height="670"
+              Width="260" VerticalAlignment="Bottom">
+            <StackPanel Background="#282D31">
+                <Image Height="180"  Source="Assets/LogoTHPTAD.png"></Image>
+                <TextBlock FontWeight="Bold" FontSize="20"
+                           Foreground="White" HorizontalAlignment="Center" Margin="0 -30 0 30"
+                           ><Italic>Trường THPT An Dương</Italic></TextBlock>
+                <TreeView Name="trvMenu" Foreground="White" ItemsSource="{Binding Menu}" Width="250" 
+                              Height="483" Background="#282D31" VerticalAlignment="Bottom" FontSize="13"
+                              FontWeight="DemiBold" ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                              ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectedItemChanged">
+                            <i:InvokeCommandAction Command="{Binding SelectedTabMenuItem}"
+                                                           CommandParameter="{Binding ElementName=trvMenu}"></i:InvokeCommandAction>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <TreeView.Resources>
+                        <HierarchicalDataTemplate DataType="{x:Type ViewModel:TabMenu}" 
+                                                  ItemsSource="{Binding Items}">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Height="30" Width="30" Margin="0 0 5 0"
+                                        Kind="{Binding Icon}"></materialDesign:PackIcon>
+                                <TextBlock Text="{Binding Title}" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </HierarchicalDataTemplate>
+                        <DataTemplate DataType="{x:Type ViewModel:TabMenuItem}">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Height="30" Width="30" Margin="0 0 5 0"
+                                        Kind="{Binding Icon}"></materialDesign:PackIcon>
+                                <TextBlock Text="{Binding Title}" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </TreeView.Resources>
                 </TreeView>
-
-
             </StackPanel>
             
         </Grid>
-        <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="754" Height="621">
-          
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="1020" Height="670">
+            <local:UCDang></local:UCDang>
         </Grid>
     </Grid>
 </Window>

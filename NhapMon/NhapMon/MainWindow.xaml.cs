@@ -18,6 +18,7 @@ namespace NhapMon
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -25,16 +26,21 @@ namespace NhapMon
             InitializeComponent();
         }
 
-        private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
+        private void btnMinimize_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            ButtonOpenMenu.Visibility = Visibility.Collapsed;
-            ButtonCloseMenu.Visibility = Visibility.Visible;
+            this.WindowState = WindowState.Minimized;
         }
 
-        private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
+        private void btnMaximize_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            ButtonOpenMenu.Visibility = Visibility.Visible;
-            ButtonCloseMenu.Visibility = Visibility.Collapsed;
+            this.DragMove();
         }
+
+        private void btnClose_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
+
+       
     }
 }

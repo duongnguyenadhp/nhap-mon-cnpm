@@ -6,13 +6,16 @@
              xmlns:local="clr-namespace:NhapMon"
              mc:Ignorable="d" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             d:DesignHeight="621" d:DesignWidth="754">
-    <Grid Background="White">
+             d:DesignHeight="670" d:DesignWidth="1020">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/THPTAnDuong.jpg"></ImageBrush>
+        </Grid.Background>
         <Border>
-            <GroupBox Height="200" Width="350"
+            <GroupBox Height="230" Width="350"
                             VerticalAlignment="Center"
                             Style="{DynamicResource MaterialDesignGroupBox}"
-                            Margin="16"
+                            Margin="16" Background="White"
                             UseLayoutRounding="True"
                             SnapsToDevicePixels="True">
                 <GroupBox.Header>
@@ -34,18 +37,17 @@
                         
                     </StackPanel.Resources>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Tài khoản:"></TextBlock>
-                        <TextBox Width="152"></TextBox>
+                        <TextBlock Text="Tài khoản:" FontWeight="Bold" FontSize="14"></TextBlock>
+                        <TextBox Width="152" Height="30"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Mật khẩu:"></TextBlock>
-                        <TextBox Width="152"></TextBox>
+                        <TextBlock Text="Mật khẩu:" FontWeight="Bold" FontSize="14"></TextBlock>
+                        <TextBox Width="152" Height="30"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Button Content="Đăng Nhập" Margin="45 15 30 0"></Button>
-                        <Button Content="Xóa"  Margin="35 15 65 0"></Button>
-                    </StackPanel>
-                    
+                    <TextBlock Text="Quên mật khẩu?" FontWeight="DemiBold" 
+                               Foreground="Green"></TextBlock>
+                    <Button Content="Đăng Nhập" Margin="15"></Button>
+                   
                 </StackPanel>
             </GroupBox>
         </Border>

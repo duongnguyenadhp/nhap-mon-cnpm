@@ -43,6 +43,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Expression.Blend.Sdk.1.0.2\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -172,19 +175,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Assets\Logo2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Assets\Logo1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ViewModel\ViewModel.csproj">
       <Project>{9d2b5a15-227f-43e3-8431-96bc3ac6bff6}</Project>
       <Name>ViewModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\school.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\space1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\THPTAnDuong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\LogoTHPTAD.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

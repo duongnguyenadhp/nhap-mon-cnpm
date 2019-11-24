@@ -85,3 +85,8 @@ D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\NhapMon.exe
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\NhapMon.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.g.cs
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.baml
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\ViewModel.dll.config
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.g.cs
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.baml
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\System.Windows.Interactivity.dll
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\GeneratedInternalTypeHelper.g.cs
