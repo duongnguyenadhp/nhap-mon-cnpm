@@ -7,3 +7,9 @@ D:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\Model.dll
 D:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\Model.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.dll
 D:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.pdb
+E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\Model.dll.config
+E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.dll
+E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.xml
+E:\Git\nhap-mon-cnpm\NhapMon\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\nhap-mon-cnpm\NhapMon\Model\obj\Debug\Model.csproj.CopyComplete
