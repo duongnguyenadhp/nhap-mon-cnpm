@@ -25,11 +25,11 @@ namespace ViewModel
             },Icon="DesktopClassic"},
             new TabMenu(){Title="Quản lý học sinh",Items=new ObservableCollection<TabMenuItem>(){
                 new TabMenuItem(){Title="Thông tin học sinh",Icon="PersonAddOutline"},
-                new TabMenuItem(){Title="Phân lớp",Icon="ArrangeSendToBack"},
                 new TabMenuItem(){Title="Tiền học",Icon="Bitcoin"},
                 new TabMenuItem(){Title="Học tập",Icon="BookOpenOutline"},
                 new TabMenuItem(){Title="Rèn luyện",Icon="BookOpenOutline"},
             },Icon="HumanChild"},
+            new TabMenu(){Title="Phân công giảng dạy",Icon="FolderSearchOutline"},
             new TabMenu(){Title="Tìm kiếm",Icon="FolderSearchOutline"},
             new TabMenu(){Title="Báo cáo thống kê",Icon="FileDocument   "}
         };

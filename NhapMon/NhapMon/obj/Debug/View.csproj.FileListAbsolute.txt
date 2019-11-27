@@ -84,8 +84,6 @@ D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\NhapMon.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.g.cs
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.baml
 E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\ViewModel.dll.config
-E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.g.cs
-E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDM.baml
 E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\System.Windows.Interactivity.dll
 E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\System.Windows.Interactivity.dll
@@ -94,3 +92,7 @@ D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\bin\Debug\BaseViewModel.pdb
 D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCPCGiangDay.g.cs
 E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCPCGiangDay.baml
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCDanhMucKhoi.g.cs
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDanhMucPhu.g.cs
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCDanhMucKhoi.baml
+E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\UCQLDanhMucPhu.baml
