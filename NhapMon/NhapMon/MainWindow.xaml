@@ -16,7 +16,7 @@
 
     <Grid>
         <Grid Name="grMenuTitle" Height="30" VerticalAlignment="Top" 
-              Background="#282D31" > 
+              Background="#2196F3" >
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <StackPanel.Resources>
                     <Style TargetType="Button">
@@ -38,10 +38,10 @@
                 </Button>
             </StackPanel>
             <Menu HorizontalAlignment="Left" Height="30" Name="MenuTitle"
-                  BorderThickness="0" Background="#282D31">
+                  BorderThickness="0" Background="#2196F3">
                 <Menu.Resources>
                     <Style TargetType="MenuItem" x:Key="MenuItemStyle">
-                        <Setter Property="Background" Value="#282D31"></Setter>
+                        <Setter Property="Background" Value="#2196F3"></Setter>
                         <Setter Property="Foreground" Value="White"></Setter>
                         <Setter Property="Height" Value="30"></Setter>
                         <Setter Property="BorderThickness" Value="0"></Setter>
@@ -63,15 +63,15 @@
         </Grid>
         <Grid x:Name="grMenu" HorizontalAlignment="Left" Height="670"
               Width="260" VerticalAlignment="Bottom">
-            <StackPanel Background="#282D31">
+            <StackPanel Background="#2196F3">
                 <Image Height="180"  Source="Assets/LogoTHPTAD.png"></Image>
                 <TextBlock FontWeight="Bold" FontSize="20"
                            Foreground="White" HorizontalAlignment="Center" Margin="0 -30 0 30"
                            ><Italic>Trường THPT An Dương</Italic></TextBlock>
                 <TreeView Name="trvMenu" Foreground="White" ItemsSource="{Binding Menu}" Width="250" 
-                              Height="483" Background="#282D31" VerticalAlignment="Bottom" FontSize="13"
+                              Height="463" Background="#2196F3" VerticalAlignment="Bottom" FontSize="13"
                               FontWeight="DemiBold" ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-                              ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                              ScrollViewer.VerticalScrollBarVisibility="Hidden" Margin="5,0">
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="SelectedItemChanged">
                             <i:InvokeCommandAction Command="{Binding SelectedTabMenuItem}"
@@ -97,10 +97,10 @@
                     </TreeView.Resources>
                 </TreeView>
             </StackPanel>
-            
+
         </Grid>
         <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="1020" Height="670">
-            <local:UCDang></local:UCDang>
+            <local:UCThongTinHS></local:UCThongTinHS>
         </Grid>
     </Grid>
 </Window>

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace NhapMon
 {
     /// <summary>
-    /// Interaction logic for UCQLHocSinh.xaml
+    /// Interaction logic for UCPhanLop.xaml
     /// </summary>
-    public partial class UCQLHocSinh : UserControl
+    public partial class UCPhanLop : UserControl
     {
-        public UCQLHocSinh()
+        public UCPhanLop()
         {
             InitializeComponent();
         }

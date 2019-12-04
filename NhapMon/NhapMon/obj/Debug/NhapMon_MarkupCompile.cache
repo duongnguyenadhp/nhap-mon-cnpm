@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\
+D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\obj\Debug\
 NhapMon
 none
 false
 DEBUG;TRACE
-E:\Git\nhap-mon-cnpm\NhapMon\NhapMon\App.xaml
-12-1862713846
+D:\Git\nhap-mon-cnpm\NhapMon\NhapMon\App.xaml
+12-169058819
 
-16-1989283907
-17786719676
-UCDangNhap.xaml;UCDanhMucKhoi.xaml;UCDMDiemthi.xaml;UCDMGiaoVien.xaml;UCDMLop.xaml;MainWindow.xaml;UCDMMonHoc.xaml;UCHSDangHoc.xaml;UCHSDaTotNghiep.xaml;UCPCGiangDay.xaml;UCQLDanhMucPhu.xaml;UCQLHocSinh.xaml;
+16243490075
+17-118068151
+UCDangNhap.xaml;DanhMuc\UCDanhMucKhoi.xaml;QuanLyHocSinh\UCDMDiemthi.xaml;DanhMuc\UCDMGiaoVien.xaml;MainWindow.xaml;DanhMuc\UCDMMonHoc.xaml;QuanLyHocSinh\UCKhenThuong.xaml;QuanLyHocSinh\UCKyLuat.xaml;UCPCGiangDay.xaml;QuanLyHocSinh\UCPhanLop.xaml;DanhMuc\UCQLDanhMucPhu.xaml;QuanLyHocSinh\UCThongTinHS.xaml;
 
 False
 

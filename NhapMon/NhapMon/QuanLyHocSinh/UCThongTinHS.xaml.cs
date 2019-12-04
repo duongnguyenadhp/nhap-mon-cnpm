@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace NhapMon
 {
     /// <summary>
-    /// Interaction logic for DMLop.xaml
+    /// Interaction logic for UCThongTinHS.xaml
     /// </summary>
-    public partial class DMLop : UserControl
+    public partial class UCThongTinHS : UserControl
     {
-        public DMLop()
+        public UCThongTinHS()
         {
             InitializeComponent();
         }

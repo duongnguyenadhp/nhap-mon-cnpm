@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="NhapMon.UCKyLuat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NhapMon"
+             mc:Ignorable="d" 
+             d:DesignHeight="670" d:DesignWidth="1020">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Danh sách kỷ luật" Margin="16">
+            <StackPanel>
+                <StackPanel Height="40" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Học kỳ:"
+                               VerticalAlignment="Center"></TextBlock>
+                    <ComboBox Width="120" Style="{x:Null}" Margin="5"></ComboBox>
+                    <TextBlock Text="Năm:" Margin="30 0 0 0"
+                               VerticalAlignment="Center"></TextBlock>
+                    <TextBox Width="100" Style="{x:Null}" Margin="5"></TextBox>
+                    <Button Content="Tìm" Margin="2 0 0 0"></Button>
+                    <Button Content="Xem chi tiết" Margin="5 0 0 0"></Button>
+                </StackPanel>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Mã HS" Width="80"></GridViewColumn>
+                            <GridViewColumn Header="Tên học sinh" Width="120"></GridViewColumn>
+                            <GridViewColumn Header="Lớp" Width="100"></GridViewColumn>
+                            <GridViewColumn Header="Mã KT" Width="80"></GridViewColumn>
+                            <GridViewColumn Header="Điểm cộng" Width="100"></GridViewColumn>
+                            <GridViewColumn Header="Học kỳ" Width="80"></GridViewColumn>
+                            <GridViewColumn Header="Năm học" Width="90"></GridViewColumn>
+                            <GridViewColumn Header="Nội dung" Width="130"></GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+
+                </ListView>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Column="1" Header="Nhập thông tin" Margin="0 16 5 16">
+            <WrapPanel>
+                <TextBlock Text="Mã học sinh:" VerticalAlignment="Center"></TextBlock>
+                <TextBox Width="135" Margin="5" Height="30" Style="{x:Null}"></TextBox>
+                <Button Content="Tìm" Width="140" Margin="5"></Button>
+                <TextBlock Text="Tên học sinh:" VerticalAlignment="Center"></TextBlock>
+                <TextBox Width="135" Margin="5" IsEnabled="False" Height="30" Style="{x:Null}"></TextBox>
+                <TextBlock Text="Lớp:" VerticalAlignment="Center"></TextBlock>
+                <TextBox Width="135" Margin="5" IsEnabled="False" Height="30" Style="{x:Null}"></TextBox>
+                <TextBlock Text="Mã kỷ luật:" VerticalAlignment="Center"></TextBlock>
+                <TextBox Width="135" Margin="5" Height="30" Style="{x:Null}"></TextBox>
+                <TextBlock Text="Điểm trừ:" VerticalAlignment="Center"></TextBlock>
+                <TextBox Width="135" Margin="5"  Height="30" Style="{x:Null}"></TextBox>
+                <TextBlock Text="Học kỳ:" VerticalAlignment="Center"></TextBlock>
+                <ComboBox Width="135" Margin="5" Height="30" Style="{x:Null}"></ComboBox>
+                <TextBlock Text="Năm học:" VerticalAlignment="Center"></TextBlock>
+                <TextBox Width="135" Margin="5" Height="30" Style="{x:Null}"></TextBox>
+                <TextBlock Text="Nội dung kỷ luật:" VerticalAlignment="Center"></TextBlock>
+                <TextBox Width="135" Margin="5" 
+                         IsEnabled="False" Height="50" Style="{x:Null}"></TextBox>
+                <Button Content="Thêm" Width="140" Margin="5"></Button>
+                <Button Content="Sửa" Width="70" Margin="5 0 0 0"></Button>
+                <Button Content="Xóa" Width="60" Margin="5 0 0 0" ></Button>
+            </WrapPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

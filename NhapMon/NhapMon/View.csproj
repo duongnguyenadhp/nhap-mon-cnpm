@@ -67,53 +67,49 @@
     <Compile Include="UCDangNhap.xaml.cs">
       <DependentUpon>UCDangNhap.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCDanhMucKhoi.xaml.cs">
+    <Compile Include="DanhMuc\UCDanhMucKhoi.xaml.cs">
       <DependentUpon>UCDanhMucKhoi.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCDMDiemthi.xaml.cs">
+    <Compile Include="QuanLyHocSinh\UCDMDiemthi.xaml.cs">
       <DependentUpon>UCDMDiemthi.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCDMGiaoVien.xaml.cs">
+    <Compile Include="DanhMuc\UCDMGiaoVien.xaml.cs">
       <DependentUpon>UCDMGiaoVien.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCDMLop.xaml.cs">
-      <DependentUpon>UCDMLop.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UCDMMonHoc.xaml.cs">
+    <Compile Include="DanhMuc\UCDMMonHoc.xaml.cs">
       <DependentUpon>UCDMMonHoc.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCHSDangHoc.xaml.cs">
-      <DependentUpon>UCHSDangHoc.xaml</DependentUpon>
+    <Compile Include="QuanLyHocSinh\UCKhenThuong.xaml.cs">
+      <DependentUpon>UCKhenThuong.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCHSDaTotNghiep.xaml.cs">
-      <DependentUpon>UCHSDaTotNghiep.xaml</DependentUpon>
+    <Compile Include="QuanLyHocSinh\UCKyLuat.xaml.cs">
+      <DependentUpon>UCKyLuat.xaml</DependentUpon>
     </Compile>
     <Compile Include="UCPCGiangDay.xaml.cs">
       <DependentUpon>UCPCGiangDay.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCQLDanhMucPhu.xaml.cs">
+    <Compile Include="QuanLyHocSinh\UCPhanLop.xaml.cs">
+      <DependentUpon>UCPhanLop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\UCQLDanhMucPhu.xaml.cs">
       <DependentUpon>UCQLDanhMucPhu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCQLHocSinh.xaml.cs">
-      <DependentUpon>UCQLHocSinh.xaml</DependentUpon>
+    <Compile Include="QuanLyHocSinh\UCThongTinHS.xaml.cs">
+      <DependentUpon>UCThongTinHS.xaml</DependentUpon>
     </Compile>
     <Page Include="UCDangNhap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCDanhMucKhoi.xaml">
+    <Page Include="DanhMuc\UCDanhMucKhoi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCDMDiemthi.xaml">
+    <Page Include="QuanLyHocSinh\UCDMDiemthi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCDMGiaoVien.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UCDMLop.xaml">
+    <Page Include="DanhMuc\UCDMGiaoVien.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,15 +125,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UCDMMonHoc.xaml">
+    <Page Include="DanhMuc\UCDMMonHoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCHSDangHoc.xaml">
+    <Page Include="QuanLyHocSinh\UCKhenThuong.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCHSDaTotNghiep.xaml">
+    <Page Include="QuanLyHocSinh\UCKyLuat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,11 +141,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCQLDanhMucPhu.xaml">
+    <Page Include="QuanLyHocSinh\UCPhanLop.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCQLHocSinh.xaml">
+    <Page Include="DanhMuc\UCQLDanhMucPhu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuanLyHocSinh\UCThongTinHS.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace NhapMon
 {
     /// <summary>
-    /// Interaction logic for UCHSDaTotNghiep.xaml
+    /// Interaction logic for UCKyLuat.xaml
     /// </summary>
-    public partial class UCHSDaTotNghiep : UserControl
+    public partial class UCKyLuat : UserControl
     {
-        public UCHSDaTotNghiep()
+        public UCKyLuat()
         {
             InitializeComponent();
         }
